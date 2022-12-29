@@ -28,7 +28,19 @@
 }
 
 /* THEME */
-:root {
+:root.light {
+  --canvas-default: #f0ede3;
+  --overlay: #f2efe7;
+
+  --fg-default: #353534;
+  --fg-muted: #4a4a46;
+  --link: #0065d8;
+  --link-dark: #0065d8;
+
+  --border-color: #e6e3e1;
+}
+
+:root.dark {
   --canvas-default: #16161f;
   --canvas-primary: #2c2c3a;
   --overlay: #1f1f27;

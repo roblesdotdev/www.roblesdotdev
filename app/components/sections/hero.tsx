@@ -28,7 +28,7 @@ export default function HeroSection() {
       <div className="mt-10 flex items-center gap-6 md:mt-12 lg:mt-16">
         <Link
           to="contact"
-          className="rounded-md bg-canvas-primary px-12 py-4 font-medium hover:opacity-75"
+          className="rounded-md bg-fg px-12 py-4 font-medium text-canvas hover:opacity-75 dark:bg-canvas-primary dark:text-fg"
         >
           Email me
         </Link>

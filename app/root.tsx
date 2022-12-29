@@ -21,6 +21,8 @@ import { NotFound, ServerError } from './components/errors'
 import type { ReactNode } from 'react'
 import { getSocialMetas } from './utils/seo'
 import { getDomainUrl, getUrl } from './utils'
+import { ThemeProvider, useTheme } from './utils/theme-provider'
+import clsx from 'clsx'
 
 export const meta: MetaFunction = ({ data }) => {
   const requestInfo = data?.requestInfo
@@ -101,8 +103,9 @@ function Document({
   title?: string
   children: ReactNode
 }) {
+  const [theme] = useTheme()
   return (
-    <html lang="en">
+    <html lang="en" className={clsx(theme)}>
       <head>
         {title ? <title>{title}</title> : null}
         <Meta />
@@ -124,9 +127,11 @@ function Document({
 
 export default function App() {
   return (
-    <Document>
-      <Outlet />
-    </Document>
+    <ThemeProvider>
+      <Document>
+        <Outlet />
+      </Document>
+    </ThemeProvider>
   )
 }
 

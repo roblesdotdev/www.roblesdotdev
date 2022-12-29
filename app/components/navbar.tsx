@@ -170,7 +170,7 @@ function MobileMenu() {
           <>
             <MenuButton
               aria-controls=""
-              className="inline-flex h-14 w-14 items-center justify-center rounded-lg border-2 border-canvas-primary text-fg-muted transition focus:outline-none"
+              className="inline-flex h-14 w-14 items-center justify-center rounded-lg border-2 border-border-color text-fg-muted transition focus:outline-none dark:border-canvas-primary"
             >
               <span className="sr-only">Toggle menu</span>
               <svg
