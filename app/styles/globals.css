@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark light;
+
+    --canvas-default: 19 23 35;
+    --fg-default: 225 231 239;
+    --fg-muted: 171 181 191;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-canvas text-fg antialiased;
+  }
+
+  p {
+    @apply text-fg-muted leading-relaxed;
+  }
+
+  a {
+    @apply text-fg underline underline-offset-4 hover:text-fg-muted transition-all;
+  }
+}

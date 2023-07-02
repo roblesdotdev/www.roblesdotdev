@@ -1,41 +1,34 @@
 import type { V2_MetaFunction } from "@remix-run/node";
+import Footer from "~/components/footer";
+import Header from "~/components/header";
+import AboutSection from "~/components/sections/about";
+import ContactSection from "~/components/sections/contact";
+import ProjectsSection from "~/components/sections/projects";
+import SkillsSection from "~/components/sections/skills";
+import Spacer from "~/components/spacer";
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Aldo R. Robles | Full Stack Developer" },
+    { name: "description", content: "Aldo R. Robles. Full Stack Developer." },
   ];
 };
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div className="px-6 py-12">
+      <div className="container max-w-2xl mx-auto">
+        <Header />
+        <Spacer />
+        <AboutSection />
+        <Spacer />
+        <ProjectsSection />
+        <Spacer />
+        <SkillsSection />
+        <Spacer />
+        <ContactSection />
+        <Footer />
+      </div>
     </div>
   );
 }

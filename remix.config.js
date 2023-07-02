@@ -14,4 +14,6 @@ module.exports = {
     v2_normalizeFormMethod: true,
     v2_routeConvention: true,
   },
+  postcss: true,
+  tailwind: true,
 };
