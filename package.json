@@ -5,7 +5,12 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "typecheck": "tsc"
+    "typecheck": "tsc -b",
+    "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ignore-path .gitignore --ext js,jsx,ts,tsx .",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|css|ts|tsx)\"",
+    "format": "npm run prettier -- --list-different",
+    "format:write": "npm run prettier -- --write",
+    "validate": "run-s typecheck lint"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^1.18.1",
@@ -23,9 +28,17 @@
     "@remix-run/eslint-config": "^1.18.1",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.38.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4"
   },

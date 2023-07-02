@@ -1,12 +1,12 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { AnimatePresence, motion } from 'framer-motion'
+import { useState } from 'react'
 
 export default function AboutSection() {
-  const [showMore, setShowMore] = useState<boolean>(false);
+  const [showMore, setShowMore] = useState<boolean>(false)
 
   return (
-    <div className="py-4 flex flex-col gap-4 items-start">
-      <h1 className="font-bold text-lg">About me</h1>
+    <div className="flex flex-col items-start gap-4 py-4">
+      <h1 className="text-lg font-bold">About me</h1>
       <p>
         Vestibulum imperdiet elit nec ipsum volutpat lacinia. Fusce at quam at
         diam molestie lacinia. Nam nec tristique urna, vel ultricies sapien.
@@ -20,7 +20,7 @@ export default function AboutSection() {
             initial={{ opacity: 0, height: 0 }}
             animate={{
               opacity: 1,
-              height: "auto",
+              height: 'auto',
               transition: {
                 height: {
                   duration: 0.4,
@@ -35,7 +35,7 @@ export default function AboutSection() {
               opacity: 0,
               height: 0,
               transition: {
-                ease: "linear",
+                ease: 'linear',
                 height: {
                   duration: 0.4,
                 },
@@ -61,10 +61,10 @@ export default function AboutSection() {
       </AnimatePresence>
       <button
         onClick={() => setShowMore(!showMore)}
-        className="underline underline-offset-4 text-fg-muted"
+        className="text-fg-muted underline underline-offset-4"
       >
-        {showMore ? "Show less" : "Show more"}
+        {showMore ? 'Show less' : 'Show more'}
       </button>
     </div>
-  );
+  )
 }

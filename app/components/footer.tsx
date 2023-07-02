@@ -5,5 +5,5 @@ export default function Footer() {
         Aldo R. Robles - {new Date().getFullYear()} - Argentina
       </p>
     </footer>
-  );
+  )
 }
