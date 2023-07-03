@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Project Boost",
+    "subtitle": "Plataforma en línea que conecta a profesionales voluntarios con proyectos disponibles en ONGs y startups que requieren colaboración.",
+    "tags": ["web", "next.js", "typescript"],
+    "description": "Con una interfaz intuitiva y amigable, \"Project-Boost\" ofrece a los usuarios una experiencia fluida y sin complicaciones a medida que navegan a través de una amplia variedad de proyectos disponibles. Los profesionales voluntarios pueden explorar las diversas opciones de colaboración que se ajusten a sus habilidades, intereses y disponibilidad, con el fin de encontrar el proyecto ideal que les permita contribuir con su experiencia y conocimientos.",
+    "skills": [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Prisma",
+      "MySQL",
+      "TailwindCSS",
+      "RadixUI",
+      "Vercel"
+    ],
+    "repo": "https://github.com/roblesdotdev/project-boost",
+    "url": "https://projectboost.vercel.app/"
+  },
+  {
+    "title": "Discover Lab",
+    "subtitle": " Sitio web que proporciona un espacio centralizado para descubrir, colaborar y conectar con proyectos innovadores y emprendedores de todo el mundo.",
+    "tags": ["web", "remix.js", "typescript"],
+    "description": "Con Discover-Lab, los usuarios tienen la capacidad de navegar a través de una amplia gama de proyectos y descubrir nuevas ideas, enfoques y soluciones que están transformando industrias y abordando desafíos globales. Ya sea que se trate de startups emergentes, investigadores de vanguardia o creadores de proyectos artísticos, la plataforma ofrece una plataforma inclusiva y accesible para que todos puedan mostrar su trabajo y compartir su visión con una audiencia global.",
+    "skills": [
+      "React",
+      "Remix.js",
+      "Typescript",
+      "Prisma",
+      "PostgreSQL",
+      "TailwindCSS",
+      "RadixUI",
+      "Fly.io"
+    ],
+    "repo": "https://github.com/roblesdotdev/discover-lab",
+    "url": "https://discover-lab.fly.dev"
+  }
+]
