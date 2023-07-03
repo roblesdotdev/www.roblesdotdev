@@ -11,6 +11,20 @@ import {
 import globalStyles from '~/styles/globals.css'
 
 export const links: LinksFunction = () => [
+  {
+    rel: 'preload',
+    as: 'font',
+    href: '/fonts/inter-bold.woff2',
+    type: 'font/woff2',
+    crossOrigin: 'anonymous',
+  },
+  {
+    rel: 'preload',
+    as: 'font',
+    href: '/fonts/inter-regular.woff2',
+    type: 'font/woff2',
+    crossOrigin: 'anonymous',
+  },
   { rel: 'stylesheet', href: globalStyles },
   ...(cssBundleHref ? [{ rel: 'stylesheet', href: cssBundleHref }] : []),
 ]

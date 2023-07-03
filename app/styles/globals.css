@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* tailwind is configured to prefer this font */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     color-scheme: dark light;
