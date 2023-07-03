@@ -1,0 +1,12 @@
+node_modules
+
+/.cache
+/build
+/public/build
+.env
+.env.local
+
+tsconfig.tsbuildinfo
+
+# Local Netlify folder
+.netlify
