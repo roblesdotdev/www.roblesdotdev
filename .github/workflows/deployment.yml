@@ -1,0 +1,50 @@
+name: 🚀 Deploy
+on:
+  push:
+    paths-ignore:
+      - 'content/**'
+      - 'README.md'
+      - '**/*.draft.md'
+    branches:
+      - main
+jobs:
+  lint:
+    name: ⬣ Validate
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+      - name: ⬇ Checkout repo
+        uses: actions/checkout@v3
+      - name: ⬇ PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node_version }}
+          cache: 'pnpm'
+      - name: 📥 Download deps
+        run: pnpm install
+      - name: 🔬 Lint
+        run: pnpm validate
+
+  deploy:
+    name: Deploy app
+    needs: [validate]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+
+      - name: ⬇ Checkout Repo
+        uses: actions/checkout@v3
+
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy --remote-only --ha=false
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
