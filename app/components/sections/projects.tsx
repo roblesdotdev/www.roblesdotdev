@@ -1,4 +1,6 @@
-export default function ProjectsSection() {
+import type { Project } from '~/types'
+
+export default function ProjectsSection({ projects }: { projects: Project[] }) {
   return (
     <div className="flex flex-col items-start gap-4 py-4">
       <h1 className="text-lg font-bold">Proyectos recientes</h1>
@@ -8,15 +10,13 @@ export default function ProjectsSection() {
         ellos.
       </p>
       <div className="flex w-full flex-col gap-4">
-        {Array.from({ length: 4 }, (_, x) => x + 1).map(k => (
+        {projects.map((project, k) => (
           <div
             key={k}
             className="flex flex-col gap-1 rounded-md border border-white/10 bg-white/[0.03] p-4"
           >
-            <h1 className="font-bold">This is the title</h1>
-            <p className="text-fg-muted">
-              This is another description for more and more
-            </p>
+            <h1 className="font-bold">{project.title}</h1>
+            <p className="line-clamp-2 text-fg-muted">{project.subtitle}</p>
           </div>
         ))}
       </div>
