@@ -1,11 +1,11 @@
 export default function ProjectsSection() {
   return (
     <div className="flex flex-col items-start gap-4 py-4">
-      <h1 className="text-lg font-bold">Recent Projects</h1>
+      <h1 className="text-lg font-bold">Proyectos recientes</h1>
       <p>
-        Suspendisse vulputate neque a feugiat fermentum. Nulla magna tellus,
-        cursus nec metus sed, luctus euismod augue. Sed diam urna, interdum
-        feugiat velit sed.
+        Explora una muestra de mi trabajo más reciente y conoce las soluciones
+        que he creado aplicando mis habilidades y experiencia en cada uno de
+        ellos.
       </p>
       <div className="flex w-full flex-col gap-4">
         {Array.from({ length: 4 }, (_, x) => x + 1).map(k => (

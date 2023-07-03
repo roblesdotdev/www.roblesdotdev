@@ -6,12 +6,12 @@ export default function AboutSection() {
 
   return (
     <div className="flex flex-col items-start gap-4 py-4">
-      <h1 className="text-lg font-bold">About me</h1>
+      <h1 className="text-lg font-bold">Sobre mí</h1>
       <p>
-        Vestibulum imperdiet elit nec ipsum volutpat lacinia. Fusce at quam at
-        diam molestie lacinia. Nam nec tristique urna, vel ultricies sapien.
-        Duis consectetur ut massa at aliquam. Aenean nec massa sed mi posuere
-        convallis.
+        Soy un desarrollador full stack con una mentalidad optimista y con
+        experiencia en el desarrollo web y mobile. Mi versatilidad se extiende a
+        través de las tecnologías del back-end y del front-end, permitiéndome
+        crear soluciones integrales y eficientes.
       </p>
       <AnimatePresence initial={false} mode="wait">
         {showMore ? (
@@ -46,15 +46,22 @@ export default function AboutSection() {
             }}
           >
             <p>
-              Cras vulputate, lectus eu ornare consectetur, sem tellus mollis
-              odio, quis vehicula massa sapien non turpis. Fusce ligula magna,
-              sollicitudin id diam id, rutrum ultricies felis.
+              Poseo una tecnicatura en análisis de sistemas y mi formación se ha
+              complementado con una diversidad de bootcamps y cursos
+              especializados, lo que me ha proporcionado las habilidades
+              necesarias para llevar a cabo el desarrollo completo de
+              aplicaciones, desde su concepción hasta su implementación.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              consectetur vitae enim ut dictum. Sed enim ante, eleifend a
-              iaculis et, faucibus et arcu. Donec vel vestibulum magna, sit amet
-              commodo neque.
+              Mi objetivo es estar a la vanguardia de las últimas tendencias y
+              utilizar nuevas herramientas para ofrecer soluciones innovadoras y
+              mejorar continuamente la experiencia de los usuarios en cada
+              proyecto.
+            </p>
+            <p>
+              Fuera del trabajo, mis pasatiempos incluyen tocar el bajo, jugar
+              videojuegos, ver programas y películas de ciencia ficción, y
+              explorar nuevas tecnologías mientras practico.
             </p>
           </motion.div>
         ) : null}
@@ -63,7 +70,7 @@ export default function AboutSection() {
         onClick={() => setShowMore(!showMore)}
         className="text-fg-muted underline underline-offset-4"
       >
-        {showMore ? 'Show less' : 'Show more'}
+        {showMore ? 'Mostrar menos' : 'Mostrar mas'}
       </button>
     </div>
   )

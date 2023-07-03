@@ -5,16 +5,14 @@ export default function Header() {
   return (
     <header className="mx-auto flex max-w-2xl items-center justify-between">
       <Link to="/" className="no-underline">
-        <div className="flex flex-col gap-1">
-          <h1 className="text-lg font-bold">Aldo R. Robles</h1>
+        <div className="flex flex-col">
+          <h1 className="text-lg font-bold leading-none">Aldo R. Robles</h1>
           <p className="font-light text-fg-muted">Full Stack Developer</p>
         </div>
       </Link>
       <div className="flex items-center gap-2 text-fg-muted">
         <a
-          href="https://linkedin.com/in/robles-ra"
-          target="_blank"
-          rel="noreferrer"
+          href="mailto:robles.contactme@gmail.com"
           className="rounded-md p-2 transition hover:bg-white/5 hover:text-fg"
         >
           <MailIcon />

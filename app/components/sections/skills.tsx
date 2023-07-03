@@ -1,17 +1,22 @@
 export default function SkillsSection() {
   return (
-    <section className="flex flex-col gap-4 py-4">
-      <h1 className="text-lg font-bold">Skills</h1>
+    <section className="flex flex-col items-start gap-4 py-4">
+      <h1 className="text-lg font-bold">Habilidades</h1>
       <p>
-        My work fits under the umbrella of "Full-stack Developer". With a wide
-        variety of skills focused on web and mobile development among which
-        stand out: HTML, CSS, JavaScript, Typescript, React(next.js, remix.js),
-        Node, Python, SQL, Prisma and a few more.
+        Mi trabajo se enmarca dentro de la categoria de "Desarrollador
+        Full-stack". Cuento con una amplia variedad de habilidades enfocadas en
+        el desarrollo web y móvil, entre las que destacan: HTML, CSS,
+        JavaScript, TypeScript, React (Next.js, Remix.js), Node, Python, SQL,
+        Prisma, y algunas más.
       </p>
       <p>
-        I am constantly in search of creating quality software, with great
-        performance and accessible to all people.
+        Me esfuerzo constantemente por mejorar mis habilidades y estar al tanto
+        de las últimas tendencias y tecnologías en el ámbito del desarrollo.
       </p>
+
+      <button className="text-fg-muted underline underline-offset-4">
+        Ver Listado
+      </button>
     </section>
   )
 }
