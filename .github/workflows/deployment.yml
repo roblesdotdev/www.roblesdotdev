@@ -42,9 +42,9 @@ jobs:
         uses: styfle/cancel-workflow-action@0.11.0
 
       - name: ⬇ Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
-      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - uses: superfly/flyctl-actions@1.3
       - run: flyctl deploy --remote-only --ha=false
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
