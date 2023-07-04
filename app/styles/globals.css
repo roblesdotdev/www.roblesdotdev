@@ -34,6 +34,11 @@
     @apply bg-canvas text-fg antialiased;
   }
 
+  button,
+  a {
+    @apply outline-none ring-white/30 focus:ring-[1px];
+  }
+
   p {
     @apply leading-relaxed text-fg-muted;
   }
