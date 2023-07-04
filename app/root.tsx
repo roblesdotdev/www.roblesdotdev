@@ -39,6 +39,8 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        {/* OPEN GRAPH */}
         <meta property="og:title" content="Aldo Robles" />
         <meta property="og:site_name" content="roblesdotdev" />
         <meta property="og:url" content="https://roblesdotdev.fly.dev" />
@@ -48,6 +50,20 @@ export default function App() {
         />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="/opengraph.png" />
+
+        {/* TWITTER */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="roblesdotdev.fly.dev" />
+        <meta property="twitter:url" content="https://roblesdotdev.fly.dev/" />
+        <meta name="twitter:title" content="Aldo Robles" />
+        <meta
+          name="twitter:description"
+          content="Aldo R. Robles. Full Stack Developer. Systems Analyst."
+        />
+        <meta
+          name="twitter:image"
+          content="https://roblesdotdev.fly.dev/opengraph.png"
+        />
         <Meta />
         <Links />
       </head>
