@@ -7,8 +7,12 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  isRouteErrorResponse,
+  useRouteError,
 } from '@remix-run/react'
 import globalStyles from '~/styles/globals.css'
+import { useNonce } from './utils/nonce-provider'
+import { NotFound, ServerError } from './components/errors'
 
 export const links: LinksFunction = () => [
   {
@@ -45,5 +49,43 @@ export default function App() {
         <LiveReload />
       </body>
     </html>
+  )
+}
+
+function ErrorDocument({ children }: { children: React.ReactElement }) {
+  const nonce = useNonce()
+  return (
+    <html>
+      <head>
+        <title>Oh no...</title>
+        <Links />
+      </head>
+      <body>
+        <div className="px-6 py-12">
+          <div className="container mx-auto max-w-2xl">{children}</div>
+        </div>
+        <Scripts nonce={nonce} />
+      </body>
+    </html>
+  )
+}
+
+export function ErrorBoundary() {
+  const error = useRouteError()
+
+  if (isRouteErrorResponse(error)) {
+    if (error.status === 404) {
+      return (
+        <ErrorDocument>
+          <NotFound />
+        </ErrorDocument>
+      )
+    }
+  }
+
+  return (
+    <ErrorDocument>
+      <ServerError />
+    </ErrorDocument>
   )
 }
