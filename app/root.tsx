@@ -12,7 +12,8 @@ import {
 } from '@remix-run/react'
 import globalStyles from '~/styles/globals.css'
 import { useNonce } from './utils/nonce-provider'
-import { NotFound, ServerError } from './components/errors'
+import { NotFound, ServerError } from '~/components/errors'
+import { Toaster } from '~/components/ui/toaster'
 
 export const links: LinksFunction = () => [
   {
@@ -68,6 +69,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Toaster />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

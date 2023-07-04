@@ -13,10 +13,14 @@
     "validate": "run-s typecheck lint"
   },
   "dependencies": {
+    "@radix-ui/react-toast": "^1.1.4",
     "@remix-run/css-bundle": "^1.18.1",
     "@remix-run/node": "^1.18.1",
     "@remix-run/react": "^1.18.1",
     "@remix-run/serve": "^1.18.1",
+    "class-variance-authority": "^0.6.1",
+    "clsx": "^1.2.1",
+    "copy-to-clipboard": "^3.3.3",
     "error-stack-parser": "^2.1.4",
     "focus-trap-react": "^10.1.4",
     "framer-motion": "^10.12.18",
@@ -44,6 +48,7 @@
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwindcss": "^3.3.2",
+    "tailwindcss-animate": "^1.0.6",
     "typescript": "^5.0.4"
   },
   "engines": {
