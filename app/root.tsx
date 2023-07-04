@@ -39,6 +39,15 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta property="og:title" content="Aldo Robles" />
+        <meta property="og:site_name" content="roblesdotdev" />
+        <meta property="og:url" content="https://roblesdotdev.fly.dev" />
+        <meta
+          property="og:description"
+          content="Aldo R. Robles. Full Stack Developer. Systems Analyst."
+        />
+        <meta property="og:type" content="profile" />
+        <meta property="og:image" content="/opengraph.png" />
         <Meta />
         <Links />
       </head>
