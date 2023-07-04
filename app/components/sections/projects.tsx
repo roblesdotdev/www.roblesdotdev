@@ -1,9 +1,22 @@
 import { ArrowUpRightIcon } from 'lucide-react'
 import type { Project } from '~/types'
+import { useProjectModal } from './project-modal'
+import { useState } from 'react'
 
 export default function ProjectsSection({ projects }: { projects: Project[] }) {
+  const [currentProject, setCurrentProject] = useState<Project | undefined>(
+    projects[0],
+  )
+  const { ProjectModal, setShowProjectModal } = useProjectModal(currentProject)
+
+  const handleModal = (project: Project) => {
+    setCurrentProject(project)
+    setShowProjectModal(true)
+  }
+
   return (
     <div className="flex flex-col items-start gap-4 py-4">
+      <ProjectModal />
       <h1 className="text-lg font-bold">Proyectos recientes</h1>
       <p>
         Explora una muestra de mi trabajo más reciente y conoce las soluciones
@@ -16,7 +29,10 @@ export default function ProjectsSection({ projects }: { projects: Project[] }) {
             key={k}
             className="flex flex-col items-start gap-1 rounded-md bg-white/[0.03] p-4 ring-[1px] ring-white/10"
           >
-            <button className="underline-offset-4 transition hover:underline">
+            <button
+              onClick={() => handleModal(project)}
+              className="underline-offset-4 transition hover:underline"
+            >
               <h1 className="font-bold">
                 <div className="flex items-center gap-1">
                   {project.title}

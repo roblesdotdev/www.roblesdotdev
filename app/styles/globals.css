@@ -24,6 +24,7 @@
     color-scheme: dark light;
 
     --canvas-default: 19 23 35;
+    --canvas-muted: 26 30 42;
     --fg-default: 225 231 239;
     --fg-muted: 171 181 191;
   }
