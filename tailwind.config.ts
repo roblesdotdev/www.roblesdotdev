@@ -15,6 +15,7 @@ export default {
         canvas: {
           DEFAULT: 'rgb(var(--canvas-default) / <alpha-value>)',
           muted: 'rgb(var(--canvas-muted) / <alpha-value>)',
+          variant: 'rgb(var(--canvas-variant) / <alpha-value>)',
         },
         fg: {
           DEFAULT: 'rgb(var(--fg-default) / <alpha-value>)',

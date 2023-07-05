@@ -2,6 +2,7 @@ import { ArrowUpRightIcon } from 'lucide-react'
 import type { Project } from '~/types'
 import { useProjectModal } from './project-modal'
 import { useState } from 'react'
+import { Badge } from '../ui/badge'
 
 export default function ProjectsSection({ projects }: { projects: Project[] }) {
   const [currentProject, setCurrentProject] = useState<Project | undefined>(
@@ -19,9 +20,8 @@ export default function ProjectsSection({ projects }: { projects: Project[] }) {
       <ProjectModal />
       <h1 className="text-lg font-bold">Proyectos recientes</h1>
       <p>
-        Explora una muestra de mi trabajo más reciente y conoce las soluciones
-        que he creado aplicando mis habilidades y experiencia en cada uno de
-        ellos.
+        Explora mis proyectos más recientes y las soluciones que he creado con
+        mis habilidades y experiencia.
       </p>
       <div className="flex w-full flex-col gap-4">
         {projects.map((project, k) => (
@@ -45,12 +45,9 @@ export default function ProjectsSection({ projects }: { projects: Project[] }) {
             </p>
             <ul className="mt-1 flex items-center gap-2">
               {project.tags.map((tag, idx) => (
-                <li
-                  key={idx}
-                  className="rounded-sm bg-white/5 px-2 py-1 text-xs"
-                >
-                  {tag}
-                </li>
+                <Badge key={idx} asChild>
+                  <li>{tag}</li>
+                </Badge>
               ))}
             </ul>
           </div>

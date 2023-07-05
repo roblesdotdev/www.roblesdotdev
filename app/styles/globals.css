@@ -19,15 +19,15 @@
   font-display: swap;
 }
 
-@layer base {
-  :root {
-    color-scheme: dark light;
+:root {
+  color-scheme: dark light;
 
-    --canvas-default: 19 23 35;
-    --canvas-muted: 26 30 42;
-    --fg-default: 225 231 239;
-    --fg-muted: 171 181 191;
-  }
+  --canvas-default: 19 23 35;
+  --canvas-muted: 26 30 42;
+  --canvas-variant: 38 41 53;
+
+  --fg-default: 225 231 239;
+  --fg-muted: 171 181 191;
 }
 
 @layer base {

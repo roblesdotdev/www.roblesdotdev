@@ -8,10 +8,10 @@ export default function AboutSection() {
     <div className="flex flex-col items-start gap-4 py-4">
       <h1 className="text-lg font-bold">Sobre mí</h1>
       <p>
-        Soy un desarrollador full stack con una mentalidad optimista y con
-        experiencia en el desarrollo web y mobile. Mi versatilidad se extiende a
-        través de las tecnologías del back-end y del front-end, permitiéndome
-        crear soluciones integrales y eficientes.
+        Soy un desarrollador full stack de Argentina 🇦🇷 con experiencia en el
+        desarrollo web y móvil. Mi versatilidad se extiende a través de las
+        tecnologías del back-end y del front-end, permitiéndome crear soluciones
+        integrales y eficientes.
       </p>
       <AnimatePresence initial={false} mode="wait">
         {showMore ? (
@@ -46,22 +46,25 @@ export default function AboutSection() {
             }}
           >
             <p>
-              Poseo una tecnicatura en análisis de sistemas y mi formación se ha
-              complementado con una diversidad de bootcamps y cursos
-              especializados, lo que me ha proporcionado las habilidades
-              necesarias para llevar a cabo el desarrollo completo de
-              aplicaciones, desde su concepción hasta su implementación.
+              En cuanto a mi formación, poseo una tecnicatura en análisis de
+              sistemas que se ha complementado con una diversidad de bootcamps y
+              cursos especializados. Estos programas adicionales me han
+              permitido adquirir habilidades y conocimientos actualizados en
+              áreas como desarrollo web, arquitectura de software y gestión de
+              proyectos.
             </p>
             <p>
-              Mi objetivo es estar a la vanguardia de las últimas tendencias y
-              utilizar nuevas herramientas para ofrecer soluciones innovadoras y
-              mejorar continuamente la experiencia de los usuarios en cada
-              proyecto.
+              Disfruto trabajar en proyectos desafiantes que involucren el
+              desarrollo de soluciones innovadoras. Me gusta colaborar con
+              profesionales de diferentes áreas para encontrar soluciones
+              creativas a problemas complejos.
             </p>
             <p>
-              Fuera del trabajo, mis pasatiempos incluyen tocar el bajo, jugar
-              videojuegos, ver programas y películas de ciencia ficción, y
-              explorar nuevas tecnologías mientras practico.
+              En busca de un crecimiento profesional y personal, siempre estoy
+              abierto a adquirir nuevos conocimientos y perfeccionar mis
+              habilidades. Mi constante exploración de nuevas tecnologías y
+              tendencias emergentes me impulsa a superar desafíos y entregar
+              soluciones de alta calidad.
             </p>
           </motion.div>
         ) : null}
