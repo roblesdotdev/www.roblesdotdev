@@ -1,9 +1,6 @@
 import { Badge } from '../ui/badge'
 
 const skills = [
-  'HTML',
-  'CSS',
-  'Javascript',
   'Typescript',
   'React',
   'Next.js',
