@@ -1,21 +1,5 @@
 [
   {
-    "title": "Calendext",
-    "subtitle": "Aplicacion para administrar eventos personales con una interfaz amigable.",
-    "tags": ["web", "next.js", "typescript"],
-    "description": "Aplicación de Gestión de Eventos construida con Next.js, aprovechando la potencia de la versión 13. Permite a los usuarios programar y personalizar sus propios eventos de forma individual. Disfruta de una experiencia moderna y fluida para crear, editar y gestionar eventos de manera intuitiva.",
-    "skills": [
-      "React",
-      "Next.js",
-      "Typescript",
-      "Prisma",
-      "MySQL",
-      "TailwindCSS",
-      "RadixUI"
-    ],
-    "repo": "https://github.com/roblesdotdev/calendext"
-  },
-  {
     "title": "Project Boost",
     "subtitle": "Plataforma en línea que conecta a profesionales voluntarios con proyectos disponibles en ONGs y startups que requieren colaboración.",
     "tags": ["web", "next.js", "typescript"],
