@@ -11,9 +11,9 @@
       "Prisma",
       "MySQL",
       "TailwindCSS",
-      "RadixUI",
+      "RadixUI"
     ],
-    "repo": "https://github.com/roblesdotdev/calendext",
+    "repo": "https://github.com/roblesdotdev/calendext"
   },
   {
     "title": "Project Boost",
