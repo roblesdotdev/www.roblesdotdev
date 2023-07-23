@@ -14,6 +14,9 @@ const skills = [
   'Express',
   'Python',
   'FastAPI',
+  'Java',
+  'Kotlin',
+  'Spring Boot',
   /* TOOLS */
   'Swagger',
   'Linux',
